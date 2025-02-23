@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Sched-Ease</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+
+  <!-- Favicons -->
+  <link href="assets\img\Sched - Ease.png" rel="icon">
+  <link href="assets\img\Sched - Ease.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+
+
+</head>
+
+<body class="index-page">
+  <script>
+    // Check if splash screen has been shown
+    if (!localStorage.getItem('splashShown')) {
+      localStorage.setItem('splashShown', 'true'); // Mark splash as shown
+      window.location.href = 'splashscreen.html'; // Redirect to splash screen
+    }
+  </script>
+
+
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <img src= "assets\img\Sched - Ease Light version.png" class="sitename" width="100" height="100">
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+<section id="hero" class="hero section dark-background">
+  <img src="assets/img/hero-bg-2.jpg" alt="" class="hero-bg">
+
+  <div class="container">
+    <div class="row gy-4 align-items-center justify-content-between">
+      <!-- Image Column -->
+      <div class="col-lg-4 order-lg-last hero-img text-center text-lg-end" data-aos="zoom-out" data-aos-delay="100">
+        <img src="assets/img/UI Design - Sched-Ease.png" class="img-fluid animated" alt="">
+      </div>
+
+      <!-- Text Column -->
+      <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-in">
+        <h1>Scheduling Made Easy <span>Sched - Ease</span></h1>
+        <p>Booking made breezy – the struggle is history</p>
+        <div class="d-flex">
+          <a href="#about" class="btn-get-started">Get Started</a>
+          <a href="assets/Sched-ease video.mp4" class="glightbox btn-watch-video d-flex align-items-center">
+            <i class="bi bi-play-circle"></i><span>Watch Video</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+    <defs>
+      <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+    </defs>
+    <g class="wave1">
+      <use xlink:href="#wave-path" x="50" y="3"></use>
+    </g>
+    <g class="wave2">
+      <use xlink:href="#wave-path" x="50" y="0"></use>
+    </g>
+    <g class="wave3">
+      <use xlink:href="#wave-path" x="50" y="9"></use>
+    </g>
+  </svg>
+</section>  <!-- Hero Section -->
+
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-xl-center gy-5">
+
+          <div class="col-xl-5 content">
+            <h3>About the Project</h3>
+            <h2>The purpose of the project</h2>
+            <p>The reason for developing Sched-Ease is to simplify academic scheduling by resolving issues like time-consuming manual processes, scheduling conflicts, inefficient resource management, and limited communication tools. By providing a centralized, accessible platform, it enhances coordination, fosters collaboration, and ensures efficient use of resources for students and lecturers.
+            </p>
+            <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+
+          <div class="col-xl-7">
+            <div class="row gy-4 icon-boxes">
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="icon-box">
+                  <i class="bi bi-buildings"></i>
+                  <h3>Schedule Single Module Session</h3>
+                  <p>A Schedule Single Module Session gathers participants to share insights, identify issues, and suggest improvements for a project or process, fostering collaboration and aligning goals.</p>
+                </div>
+              </div> <!-- End Icon Box -->
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon-box">
+                  <i class="bi bi-clipboard-pulse"></i>
+                  <h3>Live Viva Evaluation</h3>
+                  <p> A Live Viva Evaluation is a real-time oral assessment to evaluate a candidate's knowledge, reasoning, and communication skills through direct interaction.</p>
+                </div>
+              </div> <!-- End Icon Box -->
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-box">
+                  <i class="bi bi-command"></i>
+                  <h3>Direct Student - Lecturer Conversation</h3>
+                  <p>A Direct Student-Lecturer Conversation is an interactive discussion between a student and lecturer, allowing for personalized guidance, clarification of doubts, and in-depth exploration of academic topics in real time.</p>
+                </div>
+              </div> <!-- End Icon Box -->
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+                <div class="icon-box">
+                  <i class="bi bi-graph-up-arrow"></i>
+                  <h3>Progress of the Project</h3>
+                  <p>The Progress of the Project feature in an app provides real-time updates and visual tracking of a project's milestones, tasks, and overall completion status. It helps users monitor achievements, identify delays, and stay aligned with goals.</p>
+                </div>
+              </div> <!-- End Icon Box -->
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <br>
+      <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section dark-background">
+
+      <img src="assets/img/Schedule.png" class="testimonials-bg" alt="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/Banuka-Athuraliya.png" class="testimonial-img" alt="">
+                <h3>Banuka Athuraliya</h3>
+                <h4>Managing Director - Andro Dollar Network (PVT) LTD &amp; SDGP Module Leader/Visiting Lecturer - Informatics Institute of Technology (IIT)</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>I recently engaged in a discussion regarding the SDGP Scheduling System with the students involved. During this conversation, I provided advice on implementing specific features to address some of the challenges encountered in the SDGP module. The key focus was on ensuring the system's functionality and usability to enhance the scheduling process.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/Manul Singhe.jpeg" class="testimonial-img" alt="">
+                <h3>Manul Singhe</h3>
+                <h4>Founder / CEO - Knight  Owl &amp; Lecturer - Informatics Institute of Technology (IIT)</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Provided constructive feedback on the project and clarified doubts regarding the SDGP processes to ensure a clearer understanding and smoother execution.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/Sulari Fernando.jpeg" class="testimonial-img" alt="">
+                <h3>Sulari Fernando</h3>
+                <h4>Visiting Lecturer - Informatics Institute of Technology (IIT)</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Finalized the SDGP Scheduling System with plans for a unified platform, and provided feedback on potential survey questions to gather valuable insights.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/Nuwan Jayawardene.jpg" class="testimonial-img" alt="">
+                <h3>Nuwan Jayawardene</h3>
+                <h4>Lecturer / Level Coordinator (Y3,Y4), Informatics Institute of Technology (IIT).</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Two promising ideas were showcased: a student calendar management application and a student emotion detection system. Recommended pursuing the latter due to its lower implementation complexity and provided guidance for a streamlined development approach.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/Kushan Bhareti.jpeg" class="testimonial-img" alt="">
+                <h3>Kushan Bhareti</h3>
+                <h4>Co-founder of Inforwaves &amp; Visiting Lecturer - Informatics Institute of Technology (IIT)</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>The timetable creation part and lecture hall reallocation can have complexity as calculations will have to be done. Look into the pain points and validate them. Can proceed with the timetable idea.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+      
+
+    </section><!-- /Testimonials Section -->
+
+    </section><!-- /About Section -->
+
+<!-- Features Section -->
+<section id="features" class="features section">
+
+  <div class="container">
+    <div class="row gy-4">
+
+      <!-- Feature Item 1 -->
+      <div class="col-lg-4 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="features-item">
+          <i class="bi bi-eye" style="color: #ffbb2c;"></i>
+          <h3><a href="" class="stretched-link">Master Calendar</a></h3>
+        </div>
+      </div>
+
+      <!-- Feature Item 2 -->
+      <div class="col-lg-4 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="features-item">
+          <i class="bi bi-infinity" style="color: #5578ff;"></i>
+          <h3><a href="" class="stretched-link">Group Live Progress</a></h3>
+        </div>
+      </div>
+
+      <!-- Feature Item 3 -->
+      <div class="col-lg-4 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="features-item">
+          <i class="bi bi-mortarboard" style="color: #e80368;"></i>
+          <h3><a href="" class="stretched-link">Booking Section</a></h3>
+        </div>
+      </div>
+
+      <!-- Feature Item 4 -->
+      <div class="col-lg-4 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="features-item">
+          <i class="bi bi-nut" style="color: #e361ff;"></i>
+          <h3><a href="" class="stretched-link">Live VIVA Tracker</a></h3>
+        </div>
+      </div>
+
+      <!-- Feature Item 5 -->
+      <div class="col-lg-4 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="500">
+        <div class="features-item">
+          <i class="bi bi-shuffle" style="color: #47aeff;"></i>
+          <h3><a href="" class="stretched-link">Chat System</a></h3>
+        </div>
+      </div>
+
+      <!-- Feature Item 6 -->
+      <div class="col-lg-4 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="600">
+        <div class="features-item">
+          <i class="bi bi-activity" style="color: #ff5828;"></i>
+          <h3><a href="" class="stretched-link">Voice to Text LogBook AI Generator</a></h3>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section><!-- /Features Section -->
+<!-- Further Development  Section -->
+<section id="features" class="features section">
+  
+  
+  <br>
+  <div class="container">
+    <div class="row gy-4">
+      <h2>Code the Future...</h2>
+      <!-- Feature Item 1 -->
+      <div class="col-lg-4 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="features-item">
+          <i class="bi bi-youtube" style="color: #ff5828;"></i>
+          <h3><a href="" class="stretched-link">Online Conferencing</a></h3>
+        </div>
+      </div>
+
+      <!-- Feature Item 2 -->
+      <div class="col-lg-4 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="features-item">
+          <i class="bi bi-quote" style="color: #e361ff;"></i>
+          <h3><a href="" class="stretched-link">AI Agent</a></h3>
+        </div>
+      </div>
+
+      <!-- Feature Item 3 -->
+      <div class="col-lg-4 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="features-item">
+          <i class="bi bi-arrow-right" style="color: #47aeff;"></i>
+          <h3><a href="" class="stretched-link">Routine Tracker</a></h3>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+<!-- /Further Development  Section -->
+
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section light-background">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-emoji-smile"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Happy Clients</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-journal-richtext"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Projects</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-headset"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="400" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Hours Of Support</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-people"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="6" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Hard Workers</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+    <!-- Details Section -->
+    <section id="details" class="details section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Details</h2>
+        <div><span>Check Our</span> <span class="description-title">Details</span></div>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4 align-items-center features-item">
+          <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
+            <img src="assets/img/Feedback.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7" data-aos="fade-up" data-aos-delay="100">
+            <h3>Friendly Session Booking</h3>
+            <p class="fst-italic">
+              The Booking Section in Sched-Ease is a feature that facilitates seamless reservation and appointment management. Here’s a brief explanation of its core aspects
+            </p>
+            <ul>
+              <li><i class="bi bi-check"></i><span> <b>User-Friendly Interface</b>:
+                Users can view available time slots and book appointments with minimal effort, using intuitive forms or calendars.</span></li>
+              <li><i class="bi bi-check"></i> <span><b>Real-Time Availability</b>:
+                Integrates with a backend system to show up-to-date availability based on existing bookings or events.</span></li>
+              <li><i class="bi bi-check"></i> <span><b>Confirmation & Notifications</b>:
+                Sends confirmation emails or push notifications for booked slots and reminders before the appointment.</span></li>
+              <li><i class="bi bi-check"></i> <span><b>Rescheduling & Cancellation</b>:
+                Allows users to modify or cancel their bookings without hassle, keeping the schedule updated.</span></li>
+            </ul>
+          </div>
+        </div><!-- Features Item -->
+
+        <div class="row gy-4 align-items-center features-item">
+          <div class="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+            <img src="assets/img/Viva.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 order-2 order-md-1" data-aos="fade-up" data-aos-delay="200">
+            <h3>Live VIVA Tracker</h3>
+            <p class="fst-italic">
+              The Live Viva Tracker in a scheduling app is a feature designed to monitor and provide real-time updates on viva sessions as they progress. Here's a brief overview
+            </p>
+            <ul>
+              <li><i class="bi bi-check"></i><span> <b>Real-Time Status Updates</b>:
+                Displays the current state of the viva (e.g: "In Progress," "Waiting," or "Completed").</span></li>
+              <li><i class="bi bi-check"></i> <span><b>Participant Tracking</b>:
+                Tracks which participants (e.g: examiners) are currently active in the session.</span></li>
+              <li><i class="bi bi-check"></i> <span><b>Time Monitoring</b>:
+                Shows elapsed time for ongoing sessions and estimated remaining time for upcoming ones.</span></li>
+              <li><i class="bi bi-check"></i> <span><b>Notifications and Alerts</b>:
+                Sends updates or alerts for delays, session starts, or completions to participants and admins.</span></li>
+            </ul>
+          </div>
+        </div><!-- Features Item -->
+
+        <div class="row gy-4 align-items-center features-item">
+          <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out">  
+            <img src="assets\img/ChatSystem.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7" data-aos="fade-up">
+            <h3>Educational Chat System</h3>
+            <p>A chat system between students and lecturers in a scheduling app enables seamless communication before, during, and after viva sessions or meetings. Here’s a brief explanation of its core features.</p>
+            <ul>
+              <li><i class="bi bi-check"></i><span> <b>Real-Time Messaging</b>:
+                Students and lecturers can send instant messages to discuss session details, ask questions, or share resources.</span></li>
+              <li><i class="bi bi-check"></i> <span><b>Session-Specific Chats</b>:
+                Chats can be linked to specific sessions or meetings, ensuring conversations are organized and context-driven.</span></li>
+              <li><i class="bi bi-check"></i> <span><b>Message History</b>:
+                The system retains chat history for future reference, allowing both parties to revisit important discussions or instructions.</span></li>
+              <li><i class="bi bi-check"></i> <span><b>File Sharing</b>:
+                Students and lecturers can share documents, presentations, or study materials directly within the chat interface.</span></li>
+                <li><i class="bi bi-check"></i> <span><b>Private and Group Chats</b>:
+                  The chat system may support one-on-one conversations or group chats for broader discussions, such as with multiple students or examiners.</span></li>
+            </ul>
+          </div>
+        </div><!-- Features Item -->
+
+        <div class="row gy-4 align-items-center features-item">
+          <div class="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out">
+            <img src="assets/img/VoiceToText.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 order-2 order-md-1" data-aos="fade-up">
+            <h3>Voice to Text LogBook Generator</h3>
+            <p class="fst-italic">
+              A Voice-to-Text Logbook Generator in a scheduling app converts spoken words into written text to create automatic logs or meeting notes. Here's a brief explanation
+            </p>
+            <ul>
+              <li><i class="bi bi-check"></i><span> <b>Voice Recognition</b>:
+                The system uses speech-to-text technology to transcribe spoken words into text, capturing meeting discussions, feedback, or session summaries.</span></li>
+              <li><i class="bi bi-check"></i> <span><b>Real-Time Logging</b>:
+                As the conversation progresses, the logbook is updated in real time, capturing every significant point or interaction.</span></li>
+              <li><i class="bi bi-check"></i> <span><b>Session-Specific Logs</b>:
+                Logs are linked to specific sessions or meetings, making it easy to associate conversations with their respective events or topics.</span></li>
+              <li><i class="bi bi-check"></i> <span><b>Editable Logs</b>:
+                After the transcription, users (students, lecturers, or admins) can edit the log for clarity, correct errors, or add additional comments.</span></li>
+                
+            </ul>
+          </div>
+        </div><!-- Features Item -->
+
+      </div>
+
+    </section><!-- /Details Section -->
+
+
+    
+
+    <!-- Team Section -->
+    <section id="team" class="team section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Team</h2>
+        <div><span>Check Our</span> <span class="description-title">Team</span></div>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-5">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="pic"><img src="assets/img/team/Lakindu.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Lakindu Samarasinghe</h4>
+                <span>Project Leader</span>
+                <div class="social">
+
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/lakindu_samarasinghe?utm_source=qr&igsh=MWJvem0yMjAyYnh6Ng=="><i class="bi bi-instagram"></i></a>
+                  <a href="linkedin.com/in/lakindu-samarasinghe-685098292"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="pic"><img src="assets/img/team/Thishakya.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Thishakya Wickramasingharachchi</h4>
+                <span>Project Member</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/thishakyaaaa?igsh=dHBxd24wZmRxdGRh"><i class="bi bi-instagram"></i></a>
+                  <a href="linkedin.com/in/thishakya-wickramasinghearachchi-67223b292"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="member">
+              <div class="pic"><img src="assets/img/team/Faaeq.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Faaeq Fazal</h4>
+                <span>Project Member</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/m_faaeq?igsh=MmZtbTlkb3J6emJp"><i class="bi bi-instagram"></i></a>
+                  <a href="linkedin.com/in/faaeq-fazal"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="pic"><img src="assets/img/team/Pehansa.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Pehansa Dharmapala</h4>
+                <span>Project Member</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/ranu_pehansa?igsh=cGh1NXhsZWFqdzJr"><i class="bi bi-instagram"></i></a>
+                  <a href="linkedin.com/in/ranumi-pehansa-272951299"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+          
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="pic"><img src="assets/img/team/Cheran.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Cheran Lee</h4>
+                <span>Project Member</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href="linkedin.com/in/cheran-li"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="pic"><img src="assets/img/team/Kavindya.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Kavindya Bandara</h4>
+                <span>Project Member</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/.kaveee.?igsh=ZTV4dDNqeW94eXdt"><i class="bi bi-instagram"></i></a>
+                  <a href="linkedin.com/in/kavindya-bandara-5ab060318"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- End Team Member -->
+
+      </div>
+
+    </section><!-- /Team Section -->
+      <!-- Gallery Section -->
+      <section id="gallery" class="gallery section">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Gallery</h2>
+          <div><span>Check Our</span> <span class="description-title">Gallery</span></div>
+        </div><!-- End Section Title -->
+  
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+  
+          <div class="row g-0">
+  
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="assets/img/gallery/Team 1.jpg" class="glightbox" data-gallery="images-gallery">
+                  <img src="assets/img/gallery/Team 1.jpg" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div><!-- End Gallery Item -->
+  
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="assets/img/gallery/Team 2.jpg" class="glightbox" data-gallery="images-gallery">
+                  <img src="assets/img/gallery/Team 2.jpg" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div><!-- End Gallery Item -->
+  
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="assets/img/gallery/Team 4.jpg" class="glightbox" data-gallery="images-gallery">
+                  <img src="assets/img/gallery/Team 4.jpg" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div><!-- End Gallery Item -->
+  
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="assets/img/gallery/Team 5.jpg" class="glightbox" data-gallery="images-gallery">
+                  <img src="assets/img/gallery/Team 5.jpg" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div><!-- End Gallery Item -->
+  
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="assets/img/gallery/Team 6.jpg" class="glightbox" data-gallery="images-gallery">
+                  <img src="assets/img/gallery/Team 6.jpg" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div><!-- End Gallery Item -->
+  
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="assets/img/gallery/ClickUp.png" class="glightbox" data-gallery="images-gallery">
+                  <img src="assets/img/gallery/ClickUp.png" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div><!-- End Gallery Item -->
+  
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="assets/img/gallery/Group.png" class="glightbox" data-gallery="images-gallery">
+                  <img src="assets/img/gallery/Group.png" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div><!-- End Gallery Item -->
+  
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="assets/img/gallery/UI.png" class="glightbox" data-gallery="images-gallery">
+                  <img src="assets/img/gallery/UI.png" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div><!-- End Gallery Item -->
+
+            
+  
+          </div>
+  
+        </div>
+  
+      </section><!-- /Gallery Section -->
+
+
+
+    <!-- Faq Section -->
+    <section id="faq" class="faq section light-background">
+
+      <div class="container-fluid">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
+
+            <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
+              <h3><span>Frequently Asked </span><strong>Questions</strong></h3>
+              <p>
+                We conducted a comprehensive survey with the objective of analyzing and gaining deeper insights into the characteristics, preferences, and behaviors of our target audience.
+              </p>
+            </div>
+
+            <div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
+
+              <div class="faq-item faq-active">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>How problematic is it when a single module session slots fill up quickly, preventing you from booking a instructor session at a convenient time?</h3>
+                <div class="faq-content">
+                  <p>A major problem.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>How important would it be for you to have a master calendar view of all your scheduled single module sessions?</h3>
+                <div class="faq-content">
+                  <p>Extremely important</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>Would a scheduling system that matches student and mentor availability for SDGP help reduce conflicts? </h3>
+                <div class="faq-content">
+                  <p>Highly effective</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 order-1 order-lg-2">
+            <img src="assets/img/faq.jpg" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Faq Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <div><span>Check Our</span> <span class="description-title">Contact</span></div>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Address</h3>
+                <p>Informatics Institute of Technology</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Call Us</h3>
+                <p>+94 75 984 0751</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email Us</h3>
+                <p>Schedeease@gmail.com</p>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+
+          <div class="col-lg-8">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span>Sched - Ease</span>
+            
+          </a>
+
+          <div class="footer-contact pt-3">
+            <p class="mt-3"><strong>Phone:</strong> <span>+94 75 984 0751</span></p>
+            <p><strong>Email:</strong> <span>Schedeease@gmail.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-youtube"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/schedease?igsh=ejliZHEwMTZwc21l"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/sched-ease/posts/?feedView=all"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Features</h4>
+          <ul>
+            <li><a href="#">Master Calendar</a></li>
+            <li><a href="#">Live Group Progress</a></li>
+            <li><a href="#">Booking Section</a></li>
+            <li><a href="#">Live VIVA Tracker</a></li>
+            <li><a href="#">Chat System</a></li>
+            <li><a href="#">Voice to Text LogBook AI Generator</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4>Our Newsletter</h4>
+          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+          <form action="forms/newsletter.php" method="post" class="php-email-form">
+            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Sched - Ease</strong> <span>All Rights Reserved</span></p>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->   
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
